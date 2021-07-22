@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+message Coleta {
+    required string chave_coleta = 1;
+    required string orgao = 2;
+    required int32 mes = 3;
+    required int32 ano = 4;
+    required google.protobuf.Timestamp timestamp_coleta = 5;
+    required string repositorio_coletor = 6;
+    required string versao_coletor = 7;
+    required string dir_coletor = 8;
+}
+
+message Contra_cheque {
+    required string id_contra_cheque = 1;
+    required string chave_coleta = 2;
+    string nome = 3;
+    string matricula = 4;
+    string funcao = 5;
+    string local_trabalho = 6;
+    enum Tipo {
+        MEMBRO = 1;
+        SERVIDOR = 2;
+    }
+    Tipo tipo = 7;
+    bool ativo = 8;
+}
+
+message Remuneracao {
+    required string id_contra_cheque = 1;
+    required string chave_coleta = 2;
+    enum Natureza {
+        R = 1; //Receita
+        D = 2; //Despesa
+    }
+    required Natureza natureza = 3;
+    string categoria = 4;
+    required string item = 5;
+    double valor = 6;
+    
+}
