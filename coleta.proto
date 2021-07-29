@@ -15,7 +15,7 @@ message Coleta {
 }
 
 // Estrutura que faz referência a uma lista de contra-cheques
-message ContraChequeList {
+message ContraChequeLista {
     repeated Remuneracao contra_cheque = 1;
 }
 
@@ -36,7 +36,7 @@ message ContraCheque {
 }
 
 // Estrutura que faz referência a uma lista de Remunerações
-message RemuneracaoList {
+message RemuneracaoLista {
     repeated Remuneracao remuneracao = 1;
 }
 
