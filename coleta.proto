@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
 
+// Estrutura com informações pertencentes a coleta dos dados referentes a um órgão-mes-ano
 message Coleta {
     required string chave_coleta = 1;
     required string orgao = 2;
@@ -13,10 +14,12 @@ message Coleta {
     required string dir_coletor = 8;
 }
 
+// Estrutura que faz referência a uma lista de contra-cheques
 message ContraChequeList {
     repeated Remuneracao contra_cheque = 1;
 }
 
+// Estrutura que faz referência a uma linha de contra-cheque em um órgão-mes-ano
 message ContraCheque {
     required string id_contra_cheque = 1;
     required string chave_coleta = 2;
@@ -32,10 +35,12 @@ message ContraCheque {
     bool ativo = 8;
 }
 
+// Estrutura que faz referência a uma lista de Remunerações
 message RemuneracaoList {
     repeated Remuneracao remuneracao = 1;
 }
 
+// Estrutura que faz referência a uma linha de remuneração em um órgão-mes-ano
 message Remuneracao {
     required string id_contra_cheque = 1;
     required string chave_coleta = 2;
