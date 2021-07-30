@@ -17,7 +17,7 @@ message Coleta {
 
 // Estrutura que faz referência a uma lista de contra-cheques
 message FolhaDePagamento  {
-    repeated Remuneracao contra_cheque = 1;
+    repeated ContraCheque contra_cheque = 1;
 }
 
 // Estrutura que faz referência a uma linha de contra-cheque em um órgão-mes-ano
