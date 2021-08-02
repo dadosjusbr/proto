@@ -1,56 +1,57 @@
 syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
+option go_package = "./";
 
 // Estrutura com informações pertencentes a coleta dos dados referentes a um órgão-mes-ano
 message Coleta {
-    required string chave_coleta = 1;
-    required string orgao = 2;
-    required int32 mes = 3;
-    required int32 ano = 4;
-    required google.protobuf.Timestamp timestamp_coleta = 5;
-    required string repositorio_coletor = 6;
-    required string versao_coletor = 7;
-    required string dir_coletor = 8;
+    string chave_coleta = 1;
+    string orgao = 2;
+    int32 mes = 3;
+    int32 ano = 4;
+    google.protobuf.Timestamp timestamp_coleta = 5;
+    string repositorio_coletor = 6;
+    string versao_coletor = 7;
+    string dir_coletor = 8;
 }
 
 // Estrutura que faz referência a uma lista de contra-cheques
-message ContraChequeLista {
-    repeated Remuneracao contra_cheque = 1;
+message FolhaDePagamento  {
+    repeated ContraCheque contra_cheque = 1;
 }
 
 // Estrutura que faz referência a uma linha de contra-cheque em um órgão-mes-ano
 message ContraCheque {
-    required string id_contra_cheque = 1;
-    required string chave_coleta = 2;
+    string id_contra_cheque = 1;
+    string chave_coleta = 2;
     string nome = 3;
     string matricula = 4;
     string funcao = 5;
     string local_trabalho = 6;
     enum Tipo {
-        MEMBRO = 1;
-        SERVIDOR = 2;
+        MEMBRO = 0;
+        SERVIDOR = 1;
     }
     Tipo tipo = 7;
     bool ativo = 8;
 }
 
 // Estrutura que faz referência a uma lista de Remunerações
-message RemuneracaoLista {
+message Remuneracoes {
     repeated Remuneracao remuneracao = 1;
 }
 
 // Estrutura que faz referência a uma linha de remuneração em um órgão-mes-ano
 message Remuneracao {
-    required string id_contra_cheque = 1;
-    required string chave_coleta = 2;
+    string id_contra_cheque = 1;
+    string chave_coleta = 2;
     enum Natureza {
-        R = 1; //Receita
-        D = 2; //Despesa
+        R = 0; //Receita
+        D = 1; //Despesa
     }
-    required Natureza natureza = 3;
+    Natureza natureza = 3;
     string categoria = 4;
-    required string item = 5;
+    string item = 5;
     double valor = 6;
 }
 
