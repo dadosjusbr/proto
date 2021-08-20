@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
-option go_package = "./";
+option go_package = "./proto";
 
 // Estrutura com informações pertencentes a execução da coleta dos dados.
 message ResultadoColeta {
@@ -9,7 +9,6 @@ message ResultadoColeta {
     Remuneracoes remuneracoes = 2;
     FolhaDePagamento folha = 3;
 }
-
 
 // Estrutura com informações pertencentes a coleta dos dados referentes a um órgão-mes-ano
 message Coleta {
