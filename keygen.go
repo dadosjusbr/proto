@@ -3,6 +3,6 @@ package proto
 import "fmt"
 
 // IDColeta gera um nova chave para coleta.
-func IDColeta(orgao, mes, ano string) string {
-	return fmt.Sprintf("%s/%s/%s", orgao, mes, ano)
+func IDColeta(orgao string, mes, ano int) string {
+	return fmt.Sprintf("%s/%v/%v", orgao, mes, ano)
 }
