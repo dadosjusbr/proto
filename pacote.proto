@@ -1,12 +1,13 @@
 syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
-option go_package = "./proto";
+option go_package = "./csv";
 
 // Estrutura com informações pertencentes a execução da coleta dos dados.
 message ResultadoColeta {
     Coleta coleta = 1;
-    FolhaDePagamento folha = 2;
+    Remuneracoes remuneracoes = 2;
+    FolhaDePagamento folha = 3;
 }
 
 // Estrutura com informações pertencentes a coleta dos dados referentes a um órgão-mes-ano
@@ -40,7 +41,6 @@ message ContraCheque {
     }
     Tipo tipo = 7;
     bool ativo = 8;
-    Remuneracoes remuneracoes = 9;
 }
 
 // Estrutura que faz referência a uma lista de Remunerações
@@ -51,6 +51,7 @@ message Remuneracoes {
 // Estrutura que faz referência a uma linha de remuneração em um órgão-mes-ano
 message Remuneracao {
     string id_contra_cheque = 1;
+    string chave_coleta = 2;
     enum Natureza {
         R = 0; //Receita
         D = 1; //Despesa
@@ -60,4 +61,3 @@ message Remuneracao {
     string item = 5;
     double valor = 6;
 }
-
