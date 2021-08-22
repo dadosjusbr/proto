@@ -50,14 +50,13 @@ message Remuneracoes {
 
 // Estrutura que faz referência a uma linha de remuneração em um órgão-mes-ano
 message Remuneracao {
-    string id_contra_cheque = 1;
     enum Natureza {
         R = 0; //Receita
         D = 1; //Despesa
     }
-    Natureza natureza = 3;
-    string categoria = 4;
-    string item = 5;
-    double valor = 6;
+    Natureza natureza = 1;
+    string categoria = 2;
+    string item = 3;
+    double valor = 4;
 }
 
