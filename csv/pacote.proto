@@ -4,14 +4,14 @@ import "google/protobuf/timestamp.proto";
 option go_package = "github.com/dadosjusbr/proto/csv;csv";
 
 // Estrutura com informações pertencentes a execução da coleta dos dados.
-message ResultadoColeta {
-    Coleta coleta = 1;
-    Remuneracoes remuneracoes = 2;
-    FolhaDePagamento folha = 3;
+message ResultadoColeta_CSV {
+    Coleta_CSV coleta = 1;
+    Remuneracoes_CSV remuneracoes = 2;
+    FolhaDePagamento_CSV folha = 3;
 }
 
 // Estrutura com informações pertencentes a coleta dos dados referentes a um órgão-mes-ano
-message Coleta {
+message Coleta_CSV {
     string chave_coleta = 1;
     string orgao = 2;
     int32 mes = 3;
@@ -23,12 +23,12 @@ message Coleta {
 }
 
 // Estrutura que faz referência a uma lista de contra-cheques
-message FolhaDePagamento  {
-    repeated ContraCheque contra_cheque = 1;
+message FolhaDePagamento_CSV  {
+    repeated ContraCheque_CSV contra_cheque = 1;
 }
 
 // Estrutura que faz referência a uma linha de contra-cheque em um órgão-mes-ano
-message ContraCheque {
+message ContraCheque_CSV {
     string id_contra_cheque = 1;
     string chave_coleta = 2;
     string nome = 3;
@@ -44,12 +44,12 @@ message ContraCheque {
 }
 
 // Estrutura que faz referência a uma lista de Remunerações
-message Remuneracoes {
-    repeated Remuneracao remuneracao = 1;
+message Remuneracoes_CSV {
+    repeated Remuneracao_CSV remuneracao = 1;
 }
 
 // Estrutura que faz referência a uma linha de remuneração em um órgão-mes-ano
-message Remuneracao {
+message Remuneracao_CSV {
     string id_contra_cheque = 1;
     string chave_coleta = 2;
     enum Natureza {
