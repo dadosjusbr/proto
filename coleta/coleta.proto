@@ -19,6 +19,7 @@ message Coleta {
     string repositorio_coletor = 6;
     string versao_coletor = 7;
     string dir_coletor = 8;
+    repeated string arquivos = 9;
 }
 
 // Estrutura que faz referência a uma lista de contra-cheques
@@ -58,5 +59,10 @@ message Remuneracao {
     string categoria = 2;
     string item = 3;
     double valor = 4;
+    enum TipoReceita {
+        B = 0; //Base
+        O = 1; //Outros
+    }
+    TipoReceita tipo_receita = 5;
 }
 
