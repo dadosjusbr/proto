@@ -18,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='coleta.proto',
   package='',
   syntax='proto3',
-  serialized_options=b'Z)github.com/dadosjusbr/proto/coleta;coleta',
+  serialized_options=b'Z\"github.com/dadosjusbr/proto/coleta',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0c\x63oleta.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"L\n\x0fResultadoColeta\x12\x17\n\x06\x63oleta\x18\x01 \x01(\x0b\x32\x07.Coleta\x12 \n\x05\x66olha\x18\x02 \x01(\x0b\x32\x11.FolhaDePagamento\"\xc7\x01\n\x06\x43oleta\x12\x14\n\x0c\x63have_coleta\x18\x01 \x01(\t\x12\r\n\x05orgao\x18\x02 \x01(\t\x12\x0b\n\x03mes\x18\x03 \x01(\x05\x12\x0b\n\x03\x61no\x18\x04 \x01(\x05\x12\x34\n\x10timestamp_coleta\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1b\n\x13repositorio_coletor\x18\x06 \x01(\t\x12\x16\n\x0eversao_coletor\x18\x07 \x01(\t\x12\x13\n\x0b\x64ir_coletor\x18\x08 \x01(\t\"8\n\x10\x46olhaDePagamento\x12$\n\rcontra_cheque\x18\x01 \x03(\x0b\x32\r.ContraCheque\"\xff\x01\n\x0c\x43ontraCheque\x12\x18\n\x10id_contra_cheque\x18\x01 \x01(\t\x12\x14\n\x0c\x63have_coleta\x18\x02 \x01(\t\x12\x0c\n\x04nome\x18\x03 \x01(\t\x12\x11\n\tmatricula\x18\x04 \x01(\t\x12\x0e\n\x06\x66uncao\x18\x05 \x01(\t\x12\x16\n\x0elocal_trabalho\x18\x06 \x01(\t\x12 \n\x04tipo\x18\x07 \x01(\x0e\x32\x12.ContraCheque.Tipo\x12\r\n\x05\x61tivo\x18\x08 \x01(\x08\x12#\n\x0cremuneracoes\x18\t \x01(\x0b\x32\r.Remuneracoes\" \n\x04Tipo\x12\n\n\x06MEMBRO\x10\x00\x12\x0c\n\x08SERVIDOR\x10\x01\"1\n\x0cRemuneracoes\x12!\n\x0bremuneracao\x18\x01 \x03(\x0b\x32\x0c.Remuneracao\"\x80\x01\n\x0bRemuneracao\x12\'\n\x08natureza\x18\x01 \x01(\x0e\x32\x15.Remuneracao.Natureza\x12\x11\n\tcategoria\x18\x02 \x01(\t\x12\x0c\n\x04item\x18\x03 \x01(\t\x12\r\n\x05valor\x18\x04 \x01(\x01\"\x18\n\x08Natureza\x12\x05\n\x01R\x10\x00\x12\x05\n\x01\x44\x10\x01\x42+Z)github.com/dadosjusbr/proto/coleta;coletab\x06proto3'
+  serialized_pb=b'\n\x0c\x63oleta.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"i\n\x0fResultadoColeta\x12\x17\n\x06\x63oleta\x18\x01 \x01(\x0b\x32\x07.Coleta\x12 \n\x05\x66olha\x18\x02 \x01(\x0b\x32\x11.FolhaDePagamento\x12\x1b\n\x08procinfo\x18\x03 \x01(\x0b\x32\t.ProcInfo\"s\n\x08ProcInfo\x12\r\n\x05stdin\x18\x01 \x01(\t\x12\x0e\n\x06stdout\x18\x02 \x01(\t\x12\x0e\n\x06stderr\x18\x03 \x01(\t\x12\x0b\n\x03\x63md\x18\x04 \x01(\t\x12\x0e\n\x06\x63mdDir\x18\x05 \x01(\t\x12\x0e\n\x06status\x18\x06 \x01(\x05\x12\x0b\n\x03\x65nv\x18\x07 \x03(\t\"\xd9\x01\n\x06\x43oleta\x12\x14\n\x0c\x63have_coleta\x18\x01 \x01(\t\x12\r\n\x05orgao\x18\x02 \x01(\t\x12\x0b\n\x03mes\x18\x03 \x01(\x05\x12\x0b\n\x03\x61no\x18\x04 \x01(\x05\x12\x34\n\x10timestamp_coleta\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1b\n\x13repositorio_coletor\x18\x06 \x01(\t\x12\x16\n\x0eversao_coletor\x18\x07 \x01(\t\x12\x13\n\x0b\x64ir_coletor\x18\x08 \x01(\t\x12\x10\n\x08\x61rquivos\x18\t \x03(\t\"8\n\x10\x46olhaDePagamento\x12$\n\rcontra_cheque\x18\x01 \x03(\x0b\x32\r.ContraCheque\"\xff\x01\n\x0c\x43ontraCheque\x12\x18\n\x10id_contra_cheque\x18\x01 \x01(\t\x12\x14\n\x0c\x63have_coleta\x18\x02 \x01(\t\x12\x0c\n\x04nome\x18\x03 \x01(\t\x12\x11\n\tmatricula\x18\x04 \x01(\t\x12\x0e\n\x06\x66uncao\x18\x05 \x01(\t\x12\x16\n\x0elocal_trabalho\x18\x06 \x01(\t\x12 \n\x04tipo\x18\x07 \x01(\x0e\x32\x12.ContraCheque.Tipo\x12\r\n\x05\x61tivo\x18\x08 \x01(\x08\x12#\n\x0cremuneracoes\x18\t \x01(\x0b\x32\r.Remuneracoes\" \n\x04Tipo\x12\n\n\x06MEMBRO\x10\x00\x12\x0c\n\x08SERVIDOR\x10\x01\"1\n\x0cRemuneracoes\x12!\n\x0bremuneracao\x18\x01 \x03(\x0b\x32\x0c.Remuneracao\"\xcd\x01\n\x0bRemuneracao\x12\'\n\x08natureza\x18\x01 \x01(\x0e\x32\x15.Remuneracao.Natureza\x12\x11\n\tcategoria\x18\x02 \x01(\t\x12\x0c\n\x04item\x18\x03 \x01(\t\x12\r\n\x05valor\x18\x04 \x01(\x01\x12.\n\x0ctipo_receita\x18\x05 \x01(\x0e\x32\x18.Remuneracao.TipoReceita\"\x18\n\x08Natureza\x12\x05\n\x01R\x10\x00\x12\x05\n\x01\x44\x10\x01\"\x1b\n\x0bTipoReceita\x12\x05\n\x01\x42\x10\x00\x12\x05\n\x01O\x10\x01\x42$Z\"github.com/dadosjusbr/proto/coletab\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
@@ -46,8 +46,8 @@ _CONTRACHEQUE_TIPO = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=611,
-  serialized_end=643,
+  serialized_start=775,
+  serialized_end=807,
 )
 _sym_db.RegisterEnumDescriptor(_CONTRACHEQUE_TIPO)
 
@@ -71,10 +71,35 @@ _REMUNERACAO_NATUREZA = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=801,
-  serialized_end=825,
+  serialized_start=1013,
+  serialized_end=1037,
 )
 _sym_db.RegisterEnumDescriptor(_REMUNERACAO_NATUREZA)
+
+_REMUNERACAO_TIPORECEITA = _descriptor.EnumDescriptor(
+  name='TipoReceita',
+  full_name='Remuneracao.TipoReceita',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='B', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='O', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=1039,
+  serialized_end=1066,
+)
+_sym_db.RegisterEnumDescriptor(_REMUNERACAO_TIPORECEITA)
 
 
 _RESULTADOCOLETA = _descriptor.Descriptor(
@@ -99,6 +124,13 @@ _RESULTADOCOLETA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='procinfo', full_name='ResultadoColeta.procinfo', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -112,7 +144,81 @@ _RESULTADOCOLETA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=49,
-  serialized_end=125,
+  serialized_end=154,
+)
+
+
+_PROCINFO = _descriptor.Descriptor(
+  name='ProcInfo',
+  full_name='ProcInfo',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='stdin', full_name='ProcInfo.stdin', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='stdout', full_name='ProcInfo.stdout', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='stderr', full_name='ProcInfo.stderr', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='cmd', full_name='ProcInfo.cmd', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='cmdDir', full_name='ProcInfo.cmdDir', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='status', full_name='ProcInfo.status', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='env', full_name='ProcInfo.env', index=6,
+      number=7, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=156,
+  serialized_end=271,
 )
 
 
@@ -180,6 +286,13 @@ _COLETA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='arquivos', full_name='Coleta.arquivos', index=8,
+      number=9, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -192,8 +305,8 @@ _COLETA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=128,
-  serialized_end=327,
+  serialized_start=274,
+  serialized_end=491,
 )
 
 
@@ -224,8 +337,8 @@ _FOLHADEPAGAMENTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=329,
-  serialized_end=385,
+  serialized_start=493,
+  serialized_end=549,
 )
 
 
@@ -313,8 +426,8 @@ _CONTRACHEQUE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=388,
-  serialized_end=643,
+  serialized_start=552,
+  serialized_end=807,
 )
 
 
@@ -345,8 +458,8 @@ _REMUNERACOES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=645,
-  serialized_end=694,
+  serialized_start=809,
+  serialized_end=858,
 )
 
 
@@ -386,12 +499,20 @@ _REMUNERACAO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='tipo_receita', full_name='Remuneracao.tipo_receita', index=4,
+      number=5, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
     _REMUNERACAO_NATUREZA,
+    _REMUNERACAO_TIPORECEITA,
   ],
   serialized_options=None,
   is_extendable=False,
@@ -399,12 +520,13 @@ _REMUNERACAO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=697,
-  serialized_end=825,
+  serialized_start=861,
+  serialized_end=1066,
 )
 
 _RESULTADOCOLETA.fields_by_name['coleta'].message_type = _COLETA
 _RESULTADOCOLETA.fields_by_name['folha'].message_type = _FOLHADEPAGAMENTO
+_RESULTADOCOLETA.fields_by_name['procinfo'].message_type = _PROCINFO
 _COLETA.fields_by_name['timestamp_coleta'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
 _FOLHADEPAGAMENTO.fields_by_name['contra_cheque'].message_type = _CONTRACHEQUE
 _CONTRACHEQUE.fields_by_name['tipo'].enum_type = _CONTRACHEQUE_TIPO
@@ -412,8 +534,11 @@ _CONTRACHEQUE.fields_by_name['remuneracoes'].message_type = _REMUNERACOES
 _CONTRACHEQUE_TIPO.containing_type = _CONTRACHEQUE
 _REMUNERACOES.fields_by_name['remuneracao'].message_type = _REMUNERACAO
 _REMUNERACAO.fields_by_name['natureza'].enum_type = _REMUNERACAO_NATUREZA
+_REMUNERACAO.fields_by_name['tipo_receita'].enum_type = _REMUNERACAO_TIPORECEITA
 _REMUNERACAO_NATUREZA.containing_type = _REMUNERACAO
+_REMUNERACAO_TIPORECEITA.containing_type = _REMUNERACAO
 DESCRIPTOR.message_types_by_name['ResultadoColeta'] = _RESULTADOCOLETA
+DESCRIPTOR.message_types_by_name['ProcInfo'] = _PROCINFO
 DESCRIPTOR.message_types_by_name['Coleta'] = _COLETA
 DESCRIPTOR.message_types_by_name['FolhaDePagamento'] = _FOLHADEPAGAMENTO
 DESCRIPTOR.message_types_by_name['ContraCheque'] = _CONTRACHEQUE
@@ -427,6 +552,13 @@ ResultadoColeta = _reflection.GeneratedProtocolMessageType('ResultadoColeta', (_
   # @@protoc_insertion_point(class_scope:ResultadoColeta)
   })
 _sym_db.RegisterMessage(ResultadoColeta)
+
+ProcInfo = _reflection.GeneratedProtocolMessageType('ProcInfo', (_message.Message,), {
+  'DESCRIPTOR' : _PROCINFO,
+  '__module__' : 'coleta_pb2'
+  # @@protoc_insertion_point(class_scope:ProcInfo)
+  })
+_sym_db.RegisterMessage(ProcInfo)
 
 Coleta = _reflection.GeneratedProtocolMessageType('Coleta', (_message.Message,), {
   'DESCRIPTOR' : _COLETA,

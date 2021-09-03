@@ -228,13 +228,13 @@ type ProcInfo struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Stdin  string   `protobuf:"bytes,1,opt,name=stdin,proto3" json:"stdin,omitempty"`   // String containing the standard input of the process.
-	Stdout string   `protobuf:"bytes,2,opt,name=stdout,proto3" json:"stdout,omitempty"` // String containing the standard output of the process.
-	Stderr string   `protobuf:"bytes,3,opt,name=stderr,proto3" json:"stderr,omitempty"` // String containing the standard error of the process.
-	Cmd    string   `protobuf:"bytes,4,opt,name=cmd,proto3" json:"cmd,omitempty"`       // Command that has been executed
-	CmdDir string   `protobuf:"bytes,5,opt,name=cmdDir,proto3" json:"cmdDir,omitempty"` // Local directory, in which the command has been executed
-	Status string   `protobuf:"bytes,6,opt,name=status,proto3" json:"status,omitempty"` // Exit code of the process executed
-	Env    []string `protobuf:"bytes,7,rep,name=env,proto3" json:"env,omitempty"`       // Copy of strings representing the environment variables in the form ke=value
+	Stdin  string   `protobuf:"bytes,1,opt,name=stdin,proto3" json:"stdin,omitempty"`    // String containing the standard input of the process.
+	Stdout string   `protobuf:"bytes,2,opt,name=stdout,proto3" json:"stdout,omitempty"`  // String containing the standard output of the process.
+	Stderr string   `protobuf:"bytes,3,opt,name=stderr,proto3" json:"stderr,omitempty"`  // String containing the standard error of the process.
+	Cmd    string   `protobuf:"bytes,4,opt,name=cmd,proto3" json:"cmd,omitempty"`        // Command that has been executed
+	CmdDir string   `protobuf:"bytes,5,opt,name=cmdDir,proto3" json:"cmdDir,omitempty"`  // Local directory, in which the command has been executed
+	Status int32    `protobuf:"varint,6,opt,name=status,proto3" json:"status,omitempty"` // Exit code of the process executed
+	Env    []string `protobuf:"bytes,7,rep,name=env,proto3" json:"env,omitempty"`        // Copy of strings representing the environment variables in the form ke=value
 }
 
 func (x *ProcInfo) Reset() {
@@ -304,11 +304,11 @@ func (x *ProcInfo) GetCmdDir() string {
 	return ""
 }
 
-func (x *ProcInfo) GetStatus() string {
+func (x *ProcInfo) GetStatus() int32 {
 	if x != nil {
 		return x.Status
 	}
-	return ""
+	return 0
 }
 
 func (x *ProcInfo) GetEnv() []string {
@@ -741,7 +741,7 @@ var file_coleta_proto_rawDesc = []byte{
 	0x20, 0x01, 0x28, 0x09, 0x52, 0x03, 0x63, 0x6d, 0x64, 0x12, 0x16, 0x0a, 0x06, 0x63, 0x6d, 0x64,
 	0x44, 0x69, 0x72, 0x18, 0x05, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x63, 0x6d, 0x64, 0x44, 0x69,
 	0x72, 0x12, 0x16, 0x0a, 0x06, 0x73, 0x74, 0x61, 0x74, 0x75, 0x73, 0x18, 0x06, 0x20, 0x01, 0x28,
-	0x09, 0x52, 0x06, 0x73, 0x74, 0x61, 0x74, 0x75, 0x73, 0x12, 0x10, 0x0a, 0x03, 0x65, 0x6e, 0x76,
+	0x05, 0x52, 0x06, 0x73, 0x74, 0x61, 0x74, 0x75, 0x73, 0x12, 0x10, 0x0a, 0x03, 0x65, 0x6e, 0x76,
 	0x18, 0x07, 0x20, 0x03, 0x28, 0x09, 0x52, 0x03, 0x65, 0x6e, 0x76, 0x22, 0xc1, 0x02, 0x0a, 0x06,
 	0x43, 0x6f, 0x6c, 0x65, 0x74, 0x61, 0x12, 0x21, 0x0a, 0x0c, 0x63, 0x68, 0x61, 0x76, 0x65, 0x5f,
 	0x63, 0x6f, 0x6c, 0x65, 0x74, 0x61, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0b, 0x63, 0x68,
