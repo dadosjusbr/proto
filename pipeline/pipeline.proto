@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "coleta.proto";
+
+option go_package = "github.com/dadosjusbr/proto/pipeline";
+
+message ResultadoExecucao {
+	ResultadoEmpacotamento pr = 1;
+	ResultadoColeta rc  = 2;
+}
+
+// PackagingResult holds the result of the package step, which creates the datapackage.
+message ResultadoEmpacotamento {
+    string pacote = 1;
+	ProcInfo procinfo = 2;
+}

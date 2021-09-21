@@ -9,3 +9,5 @@ go install google.golang.org/protobuf/cmd/protoc-gen-go
 protoc --go_out=./ --go_opt=paths=source_relative coleta.proto
 
 protoc --go_out=./ pacote.proto
+
+protoc --go_out=pipeline/ --go_opt=paths=source_relative --proto_path=coleta --proto_path=pipeline pipeline/pipeline.proto
