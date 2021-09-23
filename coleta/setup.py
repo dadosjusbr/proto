@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(
-     name='coleta',  
+     name='proto',  
      version='0.1',
      author="Dadosjusbr",
      author_email="dadosjusbr@gmail.com",
