@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(
-     name='proto-dadosjusbr',  
-     version='0.1',
+     name='protoDadosjusbr',  
+     version='0.3',
      author="Dadosjusbr",
      author_email="dadosjusbr@gmail.com",
      description="Contém esquema de dados e funções para os coletores do DadosjusBr",
