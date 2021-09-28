@@ -8,6 +8,7 @@ message ResultadoColeta {
     Coleta coleta = 1;
     FolhaDePagamento folha = 2;
     ProcInfo procinfo = 3;
+    Metadado metadado = 4;
 }
 
 message ProcInfo {
@@ -77,3 +78,39 @@ message Remuneracao {
     TipoReceita tipo_receita = 5;
 }
 
+// Estrutura que faz referência aos metadados utilizados para construção do índice de transparência
+message Metadado {
+    int32 ano = 0;
+    int32 mes = 1;
+    int32 id_orgao = 2;
+    bool nao_requer_login = 3;
+    bool nao_requer_captcha = 4;
+    enum FormaDeAcesso {
+        ACESSO_DIRETO = 0;
+        AMIGAVEL_PARA_RASPAGEM = 1;
+        RASPAGEM_DIFICULTADA = 2;
+        NECESSITA_SIMULACAO_USUARIO = 3;
+    }
+    FormaDeAcesso acesso_ao_dado = 5;
+    enum Extensao {
+       PDF  = 0;
+       ODS  = 1;
+       XLS  = 2;
+       JSON  = 3;
+       CSV  = 4;
+    }
+    Extensao extensao = 6;
+    bool estritamente_tabular = 7;
+    bool formato_consistente = 8;
+    bool tem_matricula = 9;
+    bool tem_lotacao = 10;
+    bool tem_cargo = 11;
+    bool remuneracao_base = 12;
+    enum OpcoesDetalhamento {
+        AUSENCIA = 0;
+        SUMARIZADO = 1;
+        DETALHADO = 2;
+    }
+    OpcoesDetalhamento outras_remuneracoes = 13;
+    OpcoesDetalhamento descontos = 14;
+}
