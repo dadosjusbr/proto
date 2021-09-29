@@ -98,7 +98,7 @@ message Metadados {
     }
     Extensao extensao = 3; // Extensao do arquivo de dados, ex: CSV, JSON, XLS, etc
     bool estritamente_tabular = 4; // Órgãos que disponibilizam dados limpos (tidy data)
-    bool formato_consistente = 5; // Órgão alterou a forma de expor seus dados entre os meses?
+    bool formato_consistente = 5; // Órgão alterou a forma de expor seus dados entre o mês em questão e o mês anterior?
     bool tem_matricula = 6; // Órgão disponibiliza matrícula do servidor?
     bool tem_lotacao = 7; // Órgão disponibiliza lotação do servidor?
     bool tem_cargo = 8; // Órgão disponibiliza a função do servidor?
