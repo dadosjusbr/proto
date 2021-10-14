@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
-option go_package = "github.com/dadosjusbr/proto/csv;csv";
+option go_package = "github.com/dadosjusbr/proto/csv";
 
 // Estrutura com informações pertencentes a execução da coleta dos dados.
 message ResultadoColeta_CSV {

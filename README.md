@@ -1,6 +1,12 @@
 # Proto
 - Esquema de dados em Protobuf.
 
+# Instalando o proto
+
+```sh
+    $ apt install -y protobuf-compiler
+```
+
 # Gerar código go e python
 
 ## Gerando novos protos
