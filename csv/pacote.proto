@@ -92,7 +92,7 @@ message Metadados_CSV {
         SUMARIZADO = 1;
         DETALHADO = 2;
     }
-    OpcoesDetalhamento receita_base = 10; // Contra-cheque
-    OpcoesDetalhamento outras_receitas = 11; // Inclui indenizações, direitos eventuais, diárias, etc
-    OpcoesDetalhamento despesas = 12; // Inclui imposto de renda, retenção por teto e contribuição previdenciária
+    OpcoesDetalhamento detalhamento_receita_base = 10; // Contra-cheque
+    OpcoesDetalhamento detalhamento_outras_receitas = 11; // Inclui indenizações, direitos eventuais, diárias, etc
+    OpcoesDetalhamento detalhamento_descontos = 12; // Inclui imposto de renda, retenção por teto e contribuição previdenciária
 }
