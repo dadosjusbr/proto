@@ -65,15 +65,16 @@ message Remuneracao_CSV {
 
 // Estrutura que faz referência aos metadadoss utilizados para construção do índice de transparência
 message Metadados_CSV {
-    bool nao_requer_login = 1; // É necessário login para coleta dos dados?
-    bool nao_requer_captcha = 2; // É necessário captcha para coleta dos dados?
+    string chave_coleta = 1;
+    bool nao_requer_login = 2; // É necessário login para coleta dos dados?
+    bool nao_requer_captcha = 3; // É necessário captcha para coleta dos dados?
     enum FormaDeAcesso {
         ACESSO_DIRETO = 0; // Acesso ao dado pode ser diretamente ou via API
         AMIGAVEL_PARA_RASPAGEM = 1; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida
         RASPAGEM_DIFICULTADA = 2; // URLs não determinísticas, tags com semântica difusa (dois componentes com mesmo id)
         NECESSITA_SIMULACAO_USUARIO = 3; // Não dá para fazer raspagem e precisou simular cliques de usuário
     }
-    FormaDeAcesso acesso = 3; // Conseguimos prever/construir uma URL com base no órgão/mês/ano que leve ao download do dado?
+    FormaDeAcesso acesso = 4; // Conseguimos prever/construir uma URL com base no órgão/mês/ano que leve ao download do dado?
     enum Extensao {
        PDF  = 0;
        ODS  = 1;
@@ -81,18 +82,18 @@ message Metadados_CSV {
        JSON  = 3;
        CSV  = 4;
     }
-    Extensao extensao = 4; // Extensao do arquivo de dados, ex: CSV, JSON, XLS, etc
-    bool estritamente_tabular = 5; // Órgãos que disponibilizam dados limpos (tidy data)
-    bool formato_consistente = 6; // Órgão alterou a forma de expor seus dados entre o mês em questão e o mês anterior?
-    bool tem_matricula = 7; // Órgão disponibiliza matrícula do servidor?
-    bool tem_lotacao = 8; // Órgão disponibiliza lotação do servidor?
-    bool tem_cargo = 9; // Órgão disponibiliza a função do servidor?
+    Extensao extensao = 5; // Extensao do arquivo de dados, ex: CSV, JSON, XLS, etc
+    bool estritamente_tabular = 6; // Órgãos que disponibilizam dados limpos (tidy data)
+    bool formato_consistente = 7; // Órgão alterou a forma de expor seus dados entre o mês em questão e o mês anterior?
+    bool tem_matricula = 8; // Órgão disponibiliza matrícula do servidor?
+    bool tem_lotacao = 9; // Órgão disponibiliza lotação do servidor?
+    bool tem_cargo = 10; // Órgão disponibiliza a função do servidor?
     enum OpcoesDetalhamento {
         AUSENCIA = 0;
         SUMARIZADO = 1;
         DETALHADO = 2;
     }
-    OpcoesDetalhamento detalhamento_receita_base = 10; // Contra-cheque
-    OpcoesDetalhamento detalhamento_outras_receitas = 11; // Inclui indenizações, direitos eventuais, diárias, etc
-    OpcoesDetalhamento detalhamento_descontos = 12; // Inclui imposto de renda, retenção por teto e contribuição previdenciária
+    OpcoesDetalhamento detalhamento_receita_base = 11; // Contra-cheque
+    OpcoesDetalhamento detalhamento_outras_receitas = 12; // Inclui indenizações, direitos eventuais, diárias, etc
+    OpcoesDetalhamento detalhamento_descontos = 13; // Inclui imposto de renda, retenção por teto e contribuição previdenciária
 }
