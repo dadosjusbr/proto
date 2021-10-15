@@ -24,7 +24,7 @@
 
 ```sh
     $ cd ../csv
-    $ protoc --go_out=./ -go_opt=paths=source_relative pacote.proto
+    $ protoc --go_out=./ --go_opt=paths=source_relative pacote.proto
 ```
 
 ```sh
