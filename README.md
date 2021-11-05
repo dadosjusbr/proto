@@ -23,11 +23,6 @@
 ```
 
 ```sh
-    $ cd ../csv
-    $ protoc --go_out=./ --go_opt=paths=source_relative pacote.proto
-```
-
-```sh
     $ cd ..
     $ protoc --go_out=pipeline/ --go_opt=paths=source_relative --proto_path=coleta --proto_path=pipeline pipeline/pipeline.proto
 ```
@@ -38,11 +33,6 @@
 ```sh
     $ cd coleta
     $ protoc --python_out=./ coleta.proto
-```
-
-```sh
-    $ cd ../csv
-    $ protoc --python_out=./ pacote.proto
 ```
 
 ```sh
