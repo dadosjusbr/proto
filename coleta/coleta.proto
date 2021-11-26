@@ -95,6 +95,8 @@ message Metadados {
        XLS  = 2;
        JSON  = 3;
        CSV  = 4;
+       HTML = 5;
+       ODT = 6;
     }
     Extensao extensao = 4; // Extensao do arquivo de dados, ex: CSV, JSON, XLS, etc
     bool estritamente_tabular = 5; // Órgãos que disponibilizam dados limpos (tidy data)
