@@ -3,6 +3,7 @@
 # source: pipeline.proto
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
+from google.protobuf import descriptor_pool as _descriptor_pool
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
@@ -14,103 +15,12 @@ _sym_db = _symbol_database.Default()
 import coleta_pb2 as coleta__pb2
 
 
-DESCRIPTOR = _descriptor.FileDescriptor(
-  name='pipeline.proto',
-  package='',
-  syntax='proto3',
-  serialized_options=b'Z$github.com/dadosjusbr/proto/pipeline',
-  create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0epipeline.proto\x1a\x0c\x63oleta.proto\"V\n\x11ResultadoExecucao\x12#\n\x02pr\x18\x01 \x01(\x0b\x32\x17.ResultadoEmpacotamento\x12\x1c\n\x02rc\x18\x02 \x01(\x0b\x32\x10.ResultadoColeta\"E\n\x16ResultadoEmpacotamento\x12\x0e\n\x06pacote\x18\x01 \x01(\t\x12\x1b\n\x08procinfo\x18\x02 \x01(\x0b\x32\t.ProcInfoB&Z$github.com/dadosjusbr/proto/pipelineb\x06proto3'
-  ,
-  dependencies=[coleta__pb2.DESCRIPTOR,])
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0epipeline.proto\x1a\x0c\x63oleta.proto\"V\n\x11ResultadoExecucao\x12#\n\x02pr\x18\x01 \x01(\x0b\x32\x17.ResultadoEmpacotamento\x12\x1c\n\x02rc\x18\x02 \x01(\x0b\x32\x10.ResultadoColeta\"E\n\x16ResultadoEmpacotamento\x12\x0e\n\x06pacote\x18\x01 \x01(\t\x12\x1b\n\x08procinfo\x18\x02 \x01(\x0b\x32\t.ProcInfoB&Z$github.com/dadosjusbr/proto/pipelineb\x06proto3')
 
 
 
-
-_RESULTADOEXECUCAO = _descriptor.Descriptor(
-  name='ResultadoExecucao',
-  full_name='ResultadoExecucao',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='pr', full_name='ResultadoExecucao.pr', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='rc', full_name='ResultadoExecucao.rc', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=32,
-  serialized_end=118,
-)
-
-
-_RESULTADOEMPACOTAMENTO = _descriptor.Descriptor(
-  name='ResultadoEmpacotamento',
-  full_name='ResultadoEmpacotamento',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='pacote', full_name='ResultadoEmpacotamento.pacote', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='procinfo', full_name='ResultadoEmpacotamento.procinfo', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=120,
-  serialized_end=189,
-)
-
-_RESULTADOEXECUCAO.fields_by_name['pr'].message_type = _RESULTADOEMPACOTAMENTO
-_RESULTADOEXECUCAO.fields_by_name['rc'].message_type = coleta__pb2._RESULTADOCOLETA
-_RESULTADOEMPACOTAMENTO.fields_by_name['procinfo'].message_type = coleta__pb2._PROCINFO
-DESCRIPTOR.message_types_by_name['ResultadoExecucao'] = _RESULTADOEXECUCAO
-DESCRIPTOR.message_types_by_name['ResultadoEmpacotamento'] = _RESULTADOEMPACOTAMENTO
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
-
+_RESULTADOEXECUCAO = DESCRIPTOR.message_types_by_name['ResultadoExecucao']
+_RESULTADOEMPACOTAMENTO = DESCRIPTOR.message_types_by_name['ResultadoEmpacotamento']
 ResultadoExecucao = _reflection.GeneratedProtocolMessageType('ResultadoExecucao', (_message.Message,), {
   'DESCRIPTOR' : _RESULTADOEXECUCAO,
   '__module__' : 'pipeline_pb2'
@@ -125,6 +35,12 @@ ResultadoEmpacotamento = _reflection.GeneratedProtocolMessageType('ResultadoEmpa
   })
 _sym_db.RegisterMessage(ResultadoEmpacotamento)
 
+if _descriptor._USE_C_DESCRIPTORS == False:
 
-DESCRIPTOR._options = None
+  DESCRIPTOR._options = None
+  DESCRIPTOR._serialized_options = b'Z$github.com/dadosjusbr/proto/pipeline'
+  _RESULTADOEXECUCAO._serialized_start=32
+  _RESULTADOEXECUCAO._serialized_end=118
+  _RESULTADOEMPACOTAMENTO._serialized_start=120
+  _RESULTADOEMPACOTAMENTO._serialized_end=189
 # @@protoc_insertion_point(module_scope)
