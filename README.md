@@ -42,6 +42,6 @@
 ## Atulizando a lib no pipy
 
 ```sh
-    $ python setup.py sdist
-    $ python -m twine upload --skip-existing dist/*
+    $ python3 setup.py sdist
+    $ python3 -m twine upload --skip-existing dist/*
 ```

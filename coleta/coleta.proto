@@ -112,4 +112,7 @@ message Metadados {
     OpcoesDetalhamento receita_base = 10; // Contra-cheque
     OpcoesDetalhamento outras_receitas = 11; // Inclui indenizações, direitos eventuais, diárias, etc
     OpcoesDetalhamento despesas = 12; // Inclui imposto de renda, retenção por teto e contribuição previdenciária
+    float indice_completude = 13; // Componente do índice de transparência resultante da análise dos metadados relacionados a disponibilidade dos dados.
+    float indice_facilidade = 14; // Componente do índice de transparência resultante da análise dos metadados relacionados a dificuldade para acessar os dados que estão disponíveis.
+    float indice_transparencia = 15; // Nota final, calculada utilizada os componentes de disponibilidade e dificuldade.
 }
