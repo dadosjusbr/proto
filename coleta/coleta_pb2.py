@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=_b('Z\"github.com/dadosjusbr/proto/coleta'),
-  serialized_pb=_b('\n\x0c\x63oleta.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x88\x01\n\x0fResultadoColeta\x12\x17\n\x06\x63oleta\x18\x01 \x01(\x0b\x32\x07.Coleta\x12 \n\x05\x66olha\x18\x02 \x01(\x0b\x32\x11.FolhaDePagamento\x12\x1b\n\x08procinfo\x18\x03 \x01(\x0b\x32\t.ProcInfo\x12\x1d\n\tmetadados\x18\x04 \x01(\x0b\x32\n.Metadados\"s\n\x08ProcInfo\x12\r\n\x05stdin\x18\x01 \x01(\t\x12\x0e\n\x06stdout\x18\x02 \x01(\t\x12\x0e\n\x06stderr\x18\x03 \x01(\t\x12\x0b\n\x03\x63md\x18\x04 \x01(\t\x12\x0e\n\x06\x63mdDir\x18\x05 \x01(\t\x12\x0e\n\x06status\x18\x06 \x01(\x05\x12\x0b\n\x03\x65nv\x18\x07 \x03(\t\"\xd9\x01\n\x06\x43oleta\x12\x14\n\x0c\x63have_coleta\x18\x01 \x01(\t\x12\r\n\x05orgao\x18\x02 \x01(\t\x12\x0b\n\x03mes\x18\x03 \x01(\x05\x12\x0b\n\x03\x61no\x18\x04 \x01(\x05\x12\x34\n\x10timestamp_coleta\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1b\n\x13repositorio_coletor\x18\x06 \x01(\t\x12\x16\n\x0eversao_coletor\x18\x07 \x01(\t\x12\x13\n\x0b\x64ir_coletor\x18\x08 \x01(\t\x12\x10\n\x08\x61rquivos\x18\t \x03(\t\"8\n\x10\x46olhaDePagamento\x12$\n\rcontra_cheque\x18\x01 \x03(\x0b\x32\r.ContraCheque\"\xff\x01\n\x0c\x43ontraCheque\x12\x18\n\x10id_contra_cheque\x18\x01 \x01(\t\x12\x14\n\x0c\x63have_coleta\x18\x02 \x01(\t\x12\x0c\n\x04nome\x18\x03 \x01(\t\x12\x11\n\tmatricula\x18\x04 \x01(\t\x12\x0e\n\x06\x66uncao\x18\x05 \x01(\t\x12\x16\n\x0elocal_trabalho\x18\x06 \x01(\t\x12 \n\x04tipo\x18\x07 \x01(\x0e\x32\x12.ContraCheque.Tipo\x12\r\n\x05\x61tivo\x18\x08 \x01(\x08\x12#\n\x0cremuneracoes\x18\t \x01(\x0b\x32\r.Remuneracoes\" \n\x04Tipo\x12\n\n\x06MEMBRO\x10\x00\x12\x0c\n\x08SERVIDOR\x10\x01\"1\n\x0cRemuneracoes\x12!\n\x0bremuneracao\x18\x01 \x03(\x0b\x32\x0c.Remuneracao\"\xcd\x01\n\x0bRemuneracao\x12\'\n\x08natureza\x18\x01 \x01(\x0e\x32\x15.Remuneracao.Natureza\x12\x11\n\tcategoria\x18\x02 \x01(\t\x12\x0c\n\x04item\x18\x03 \x01(\t\x12\r\n\x05valor\x18\x04 \x01(\x01\x12.\n\x0ctipo_receita\x18\x05 \x01(\x0e\x32\x18.Remuneracao.TipoReceita\"\x18\n\x08Natureza\x12\x05\n\x01R\x10\x00\x12\x05\n\x01\x44\x10\x01\"\x1b\n\x0bTipoReceita\x12\x05\n\x01\x42\x10\x00\x12\x05\n\x01O\x10\x01\"\xb5\x05\n\tMetadados\x12(\n\x06\x61\x63\x65sso\x18\x03 \x01(\x0e\x32\x18.Metadados.FormaDeAcesso\x12%\n\x08\x65xtensao\x18\x04 \x01(\x0e\x32\x13.Metadados.Extensao\x12\x1c\n\x14\x65stritamente_tabular\x18\x05 \x01(\x08\x12\x1b\n\x13\x66ormato_consistente\x18\x06 \x01(\x08\x12\x15\n\rtem_matricula\x18\x07 \x01(\x08\x12\x13\n\x0btem_lotacao\x18\x08 \x01(\x08\x12\x11\n\ttem_cargo\x18\t \x01(\x08\x12\x33\n\x0creceita_base\x18\n \x01(\x0e\x32\x1d.Metadados.OpcoesDetalhamento\x12\x36\n\x0foutras_receitas\x18\x0b \x01(\x0e\x32\x1d.Metadados.OpcoesDetalhamento\x12/\n\x08\x64\x65spesas\x18\x0c \x01(\x0e\x32\x1d.Metadados.OpcoesDetalhamento\x12\x19\n\x11indice_completude\x18\r \x01(\x02\x12\x19\n\x11indice_facilidade\x18\x0e \x01(\x02\x12\x1c\n\x14indice_transparencia\x18\x0f \x01(\x02\"[\n\rFormaDeAcesso\x12\x11\n\rACESSO_DIRETO\x10\x00\x12\x16\n\x12NECESSITA_RASPAGEM\x10\x01\x12\x1f\n\x1bNECESSITA_SIMULACAO_USUARIO\x10\x02\"K\n\x08\x45xtensao\x12\x07\n\x03PDF\x10\x00\x12\x07\n\x03ODS\x10\x01\x12\x07\n\x03XLS\x10\x02\x12\x08\n\x04JSON\x10\x03\x12\x07\n\x03\x43SV\x10\x04\x12\x08\n\x04HTML\x10\x05\x12\x07\n\x03ODT\x10\x06\"A\n\x12OpcoesDetalhamento\x12\x0c\n\x08\x41USENCIA\x10\x00\x12\x0e\n\nSUMARIZADO\x10\x01\x12\r\n\tDETALHADO\x10\x02\x42$Z\"github.com/dadosjusbr/proto/coletab\x06proto3')
+  serialized_pb=_b('\n\x0c\x63oleta.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\x88\x01\n\x0fResultadoColeta\x12\x17\n\x06\x63oleta\x18\x01 \x01(\x0b\x32\x07.Coleta\x12 \n\x05\x66olha\x18\x02 \x01(\x0b\x32\x11.FolhaDePagamento\x12\x1b\n\x08procinfo\x18\x03 \x01(\x0b\x32\t.ProcInfo\x12\x1d\n\tmetadados\x18\x04 \x01(\x0b\x32\n.Metadados\"s\n\x08ProcInfo\x12\r\n\x05stdin\x18\x01 \x01(\t\x12\x0e\n\x06stdout\x18\x02 \x01(\t\x12\x0e\n\x06stderr\x18\x03 \x01(\t\x12\x0b\n\x03\x63md\x18\x04 \x01(\t\x12\x0e\n\x06\x63mdDir\x18\x05 \x01(\t\x12\x0e\n\x06status\x18\x06 \x01(\x05\x12\x0b\n\x03\x65nv\x18\x07 \x03(\t\"\xd9\x01\n\x06\x43oleta\x12\x14\n\x0c\x63have_coleta\x18\x01 \x01(\t\x12\r\n\x05orgao\x18\x02 \x01(\t\x12\x0b\n\x03mes\x18\x03 \x01(\x05\x12\x0b\n\x03\x61no\x18\x04 \x01(\x05\x12\x34\n\x10timestamp_coleta\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1b\n\x13repositorio_coletor\x18\x06 \x01(\t\x12\x16\n\x0eversao_coletor\x18\x07 \x01(\t\x12\x13\n\x0b\x64ir_coletor\x18\x08 \x01(\t\x12\x10\n\x08\x61rquivos\x18\t \x03(\t\"8\n\x10\x46olhaDePagamento\x12$\n\rcontra_cheque\x18\x01 \x03(\x0b\x32\r.ContraCheque\"\xff\x01\n\x0c\x43ontraCheque\x12\x18\n\x10id_contra_cheque\x18\x01 \x01(\t\x12\x14\n\x0c\x63have_coleta\x18\x02 \x01(\t\x12\x0c\n\x04nome\x18\x03 \x01(\t\x12\x11\n\tmatricula\x18\x04 \x01(\t\x12\x0e\n\x06\x66uncao\x18\x05 \x01(\t\x12\x16\n\x0elocal_trabalho\x18\x06 \x01(\t\x12 \n\x04tipo\x18\x07 \x01(\x0e\x32\x12.ContraCheque.Tipo\x12\r\n\x05\x61tivo\x18\x08 \x01(\x08\x12#\n\x0cremuneracoes\x18\t \x01(\x0b\x32\r.Remuneracoes\" \n\x04Tipo\x12\n\n\x06MEMBRO\x10\x00\x12\x0c\n\x08SERVIDOR\x10\x01\"1\n\x0cRemuneracoes\x12!\n\x0bremuneracao\x18\x01 \x03(\x0b\x32\x0c.Remuneracao\"\xcd\x01\n\x0bRemuneracao\x12\'\n\x08natureza\x18\x01 \x01(\x0e\x32\x15.Remuneracao.Natureza\x12\x11\n\tcategoria\x18\x02 \x01(\t\x12\x0c\n\x04item\x18\x03 \x01(\t\x12\r\n\x05valor\x18\x04 \x01(\x01\x12.\n\x0ctipo_receita\x18\x05 \x01(\x0e\x32\x18.Remuneracao.TipoReceita\"\x18\n\x08Natureza\x12\x05\n\x01R\x10\x00\x12\x05\n\x01\x44\x10\x01\"\x1b\n\x0bTipoReceita\x12\x05\n\x01\x42\x10\x00\x12\x05\n\x01O\x10\x01\"\xcd\x05\n\tMetadados\x12(\n\x06\x61\x63\x65sso\x18\x03 \x01(\x0e\x32\x18.Metadados.FormaDeAcesso\x12%\n\x08\x65xtensao\x18\x04 \x01(\x0e\x32\x13.Metadados.Extensao\x12\x1c\n\x14\x65stritamente_tabular\x18\x05 \x01(\x08\x12\x1b\n\x13\x66ormato_consistente\x18\x06 \x01(\x08\x12\x15\n\rtem_matricula\x18\x07 \x01(\x08\x12\x13\n\x0btem_lotacao\x18\x08 \x01(\x08\x12\x11\n\ttem_cargo\x18\t \x01(\x08\x12\x16\n\x0e\x66ormato_aberto\x18\n \x01(\x08\x12\x33\n\x0creceita_base\x18\x0b \x01(\x0e\x32\x1d.Metadados.OpcoesDetalhamento\x12\x36\n\x0foutras_receitas\x18\x0c \x01(\x0e\x32\x1d.Metadados.OpcoesDetalhamento\x12/\n\x08\x64\x65spesas\x18\r \x01(\x0e\x32\x1d.Metadados.OpcoesDetalhamento\x12\x19\n\x11indice_completude\x18\x0e \x01(\x02\x12\x19\n\x11indice_facilidade\x18\x0f \x01(\x02\x12\x1c\n\x14indice_transparencia\x18\x10 \x01(\x02\"[\n\rFormaDeAcesso\x12\x11\n\rACESSO_DIRETO\x10\x00\x12\x16\n\x12NECESSITA_RASPAGEM\x10\x01\x12\x1f\n\x1bNECESSITA_SIMULACAO_USUARIO\x10\x02\"K\n\x08\x45xtensao\x12\x07\n\x03PDF\x10\x00\x12\x07\n\x03ODS\x10\x01\x12\x07\n\x03XLS\x10\x02\x12\x08\n\x04JSON\x10\x03\x12\x07\n\x03\x43SV\x10\x04\x12\x08\n\x04HTML\x10\x05\x12\x07\n\x03ODT\x10\x06\"A\n\x12OpcoesDetalhamento\x12\x0c\n\x08\x41USENCIA\x10\x00\x12\x0e\n\nSUMARIZADO\x10\x01\x12\r\n\tDETALHADO\x10\x02\x42$Z\"github.com/dadosjusbr/proto/coletab\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
@@ -113,8 +113,8 @@ _METADADOS_FORMADEACESSO = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1559,
-  serialized_end=1650,
+  serialized_start=1583,
+  serialized_end=1674,
 )
 _sym_db.RegisterEnumDescriptor(_METADADOS_FORMADEACESSO)
 
@@ -155,8 +155,8 @@ _METADADOS_EXTENSAO = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1652,
-  serialized_end=1727,
+  serialized_start=1676,
+  serialized_end=1751,
 )
 _sym_db.RegisterEnumDescriptor(_METADADOS_EXTENSAO)
 
@@ -181,8 +181,8 @@ _METADADOS_OPCOESDETALHAMENTO = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1729,
-  serialized_end=1794,
+  serialized_start=1753,
+  serialized_end=1818,
 )
 _sym_db.RegisterEnumDescriptor(_METADADOS_OPCOESDETALHAMENTO)
 
@@ -667,43 +667,50 @@ _METADADOS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='receita_base', full_name='Metadados.receita_base', index=7,
-      number=10, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
+      name='formato_aberto', full_name='Metadados.formato_aberto', index=7,
+      number=10, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='outras_receitas', full_name='Metadados.outras_receitas', index=8,
+      name='receita_base', full_name='Metadados.receita_base', index=8,
       number=11, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='despesas', full_name='Metadados.despesas', index=9,
+      name='outras_receitas', full_name='Metadados.outras_receitas', index=9,
       number=12, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='indice_completude', full_name='Metadados.indice_completude', index=10,
-      number=13, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
+      name='despesas', full_name='Metadados.despesas', index=10,
+      number=13, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='indice_facilidade', full_name='Metadados.indice_facilidade', index=11,
+      name='indice_completude', full_name='Metadados.indice_completude', index=11,
       number=14, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='indice_transparencia', full_name='Metadados.indice_transparencia', index=12,
+      name='indice_facilidade', full_name='Metadados.indice_facilidade', index=12,
       number=15, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='indice_transparencia', full_name='Metadados.indice_transparencia', index=13,
+      number=16, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -724,7 +731,7 @@ _METADADOS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1101,
-  serialized_end=1794,
+  serialized_end=1818,
 )
 
 _RESULTADOCOLETA.fields_by_name['coleta'].message_type = _COLETA
