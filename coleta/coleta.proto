@@ -84,8 +84,9 @@ message Metadados {
     bool nao_requer_captcha = 2; // É necessário captcha para coleta dos dados?
     enum FormaDeAcesso {
         ACESSO_DIRETO = 0; // Acesso ao dado pode ser diretamente ou via API
-        NECESSITA_RASPAGEM = 1; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida e é possível fazer raspagem dos dados
-        NECESSITA_SIMULACAO_USUARIO = 2; // Não dá para fazer raspagem e precisou simular cliques de usuário
+        AMIGAVEL_PARA_RASPAGEM = 1; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida
+        RASPAGEM_DIFICULTADA = 2; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida e é possível fazer raspagem dos dados
+        NECESSITA_SIMULACAO_USUARIO = 3; // Não dá para fazer raspagem e precisou simular cliques de usuário
     }
     FormaDeAcesso acesso = 3; // Conseguimos prever/construir uma URL com base no órgão/mês/ano que leve ao download do dado?
     enum Extensao {
