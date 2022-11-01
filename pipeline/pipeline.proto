@@ -13,4 +13,5 @@ message ResultadoExecucao {
 message ResultadoEmpacotamento {
     string pacote = 1;
 	ProcInfo procinfo = 2;
+	string backup = 3;
 }
