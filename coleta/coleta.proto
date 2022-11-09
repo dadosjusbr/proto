@@ -104,7 +104,6 @@ message Metadados {
     bool tem_matricula = 7; // Órgão disponibiliza matrícula do servidor?
     bool tem_lotacao = 8; // Órgão disponibiliza lotação do servidor?
     bool tem_cargo = 9; // Órgão disponibiliza a função do servidor?
-    bool formato_aberto = 16; // Órgão disponibiliza dados em formato aberto?
     enum OpcoesDetalhamento {
         AUSENCIA = 0;
         SUMARIZADO = 1;
@@ -116,4 +115,5 @@ message Metadados {
     float indice_completude = 13; // Componente do índice de transparência resultante da análise dos metadados relacionados a disponibilidade dos dados.
     float indice_facilidade = 14; // Componente do índice de transparência resultante da análise dos metadados relacionados a dificuldade para acessar os dados que estão disponíveis.
     float indice_transparencia = 15; // Nota final, calculada utilizada os componentes de disponibilidade e dificuldade.
+    bool formato_aberto = 16; // Órgão disponibiliza dados em formato aberto?
 }
