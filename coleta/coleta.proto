@@ -80,12 +80,12 @@ message Remuneracao {
 
 // Estrutura que faz referência aos metadadoss utilizados para construção do índice de transparência
 message Metadados {
-    bool nao_requer_login = 1; // É necessário login para coleta dos dados?
-    bool nao_requer_captcha = 2; // É necessário captcha para coleta dos dados?
+    bool nao_requer_login = 1; // É necessário login para coleta dos dados? - deprecated
+    bool nao_requer_captcha = 2; // É necessário captcha para coleta dos dados? - deprecated
     enum FormaDeAcesso {
         ACESSO_DIRETO = 0; // Acesso ao dado pode ser diretamente ou via API
-        AMIGAVEL_PARA_RASPAGEM = 1; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida
-        RASPAGEM_DIFICULTADA = 2; // URLs não determinísticas, tags com semântica difusa (dois componentes com mesmo id)
+        AMIGAVEL_PARA_RASPAGEM = 1; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida - deprecated
+        RASPAGEM_DIFICULTADA = 2; // Aqui temos URLs determinísticas, tags usadas com semântica bem-definida e é possível fazer raspagem dos dados
         NECESSITA_SIMULACAO_USUARIO = 3; // Não dá para fazer raspagem e precisou simular cliques de usuário
     }
     FormaDeAcesso acesso = 3; // Conseguimos prever/construir uma URL com base no órgão/mês/ano que leve ao download do dado?
@@ -115,4 +115,5 @@ message Metadados {
     float indice_completude = 13; // Componente do índice de transparência resultante da análise dos metadados relacionados a disponibilidade dos dados.
     float indice_facilidade = 14; // Componente do índice de transparência resultante da análise dos metadados relacionados a dificuldade para acessar os dados que estão disponíveis.
     float indice_transparencia = 15; // Nota final, calculada utilizada os componentes de disponibilidade e dificuldade.
+    bool formato_aberto = 16; // Órgão disponibiliza dados em formato aberto?
 }
