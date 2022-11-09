@@ -11,6 +11,7 @@ message ResultadoExecucao {
 
 // PackagingResult holds the result of the package step, which creates the datapackage.
 message ResultadoEmpacotamento {
-    string pacote = 1;
+  string pacote = 1;
 	ProcInfo procinfo = 2;
+	string remuneracoes = 3;
 }
