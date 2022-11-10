@@ -15,6 +15,7 @@
 
 ```sh
     $ go install google.golang.org/protobuf/cmd/protoc-gen-go
+    $ sudo apt install golang-goprotobuf-dev
 ```
 // Gerar stub na raiz.
 ```sh
