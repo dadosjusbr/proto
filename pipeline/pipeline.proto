@@ -11,7 +11,10 @@ message ResultadoExecucao {
 
 // PackagingResult holds the result of the package step, which creates the datapackage.
 message ResultadoEmpacotamento {
+	//Caminho completo para o zip do datapackage na máquina
   string pacote = 1;
+	//Estrutura que contém as informacões do processo da coleta caso tenha dado erro
 	ProcInfo procinfo = 2;
+	//Caminho completo para o zip das remuneracões na máquina
 	string remuneracoes = 3;
 }
