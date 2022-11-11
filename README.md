@@ -1,4 +1,5 @@
 # Proto
+
 - Esquema de dados em Protobuf.
 
 # Instalando o proto
@@ -15,9 +16,10 @@
 
 ```sh
     $ go install google.golang.org/protobuf/cmd/protoc-gen-go
-    $ sudo apt install golang-goprotobuf-dev
 ```
+
 // Gerar stub na raiz.
+
 ```sh
     $ cd coleta
     $ protoc --go_out=./ --go_opt=paths=source_relative coleta.proto
@@ -31,6 +33,7 @@
 ### Python
 
 // Gerar stub na raiz.
+
 ```sh
     $ cd coleta
     $ protoc --python_out=./ coleta.proto
@@ -40,6 +43,25 @@
     $ cd ..
     $ protoc --python_out=pipeline/ --proto_path=coleta --proto_path=pipeline pipeline/pipeline.proto
 ```
+
+## Casos de erro ao tentar gerar proto
+
+Caso o seguinte erro tenha ocorrido, significa que a instalação da lib do protobuf não funcionou:
+
+```
+"protoc-gen-go: program not found or is not executable--go_out: protoc-gen-go: Plugin failed with status code 1."
+```
+
+Para consertar, você deve executar os seguintes comandos:
+
+```
+    $ export GOPATH=$HOME/go
+    $ export PATH=$PATH:$GOPATH/bin
+    $ go install google.golang.org/protobuf/cmd/protoc-gen-go
+```
+
+Após isso, você conseguirá gerar o proto.
+
 ## Atulizando a lib no pipy
 
 ```sh
