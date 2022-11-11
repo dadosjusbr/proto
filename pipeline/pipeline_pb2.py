@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=_b('Z$github.com/dadosjusbr/proto/pipeline'),
-  serialized_pb=_b('\n\x0epipeline.proto\x1a\x0c\x63oleta.proto\"V\n\x11ResultadoExecucao\x12#\n\x02pr\x18\x01 \x01(\x0b\x32\x17.ResultadoEmpacotamento\x12\x1c\n\x02rc\x18\x02 \x01(\x0b\x32\x10.ResultadoColeta\"E\n\x16ResultadoEmpacotamento\x12\x0e\n\x06pacote\x18\x01 \x01(\t\x12\x1b\n\x08procinfo\x18\x02 \x01(\x0b\x32\t.ProcInfoB&Z$github.com/dadosjusbr/proto/pipelineb\x06proto3')
+  serialized_pb=_b('\n\x0epipeline.proto\x1a\x0c\x63oleta.proto\"V\n\x11ResultadoExecucao\x12#\n\x02pr\x18\x01 \x01(\x0b\x32\x17.ResultadoEmpacotamento\x12\x1c\n\x02rc\x18\x02 \x01(\x0b\x32\x10.ResultadoColeta\"[\n\x16ResultadoEmpacotamento\x12\x0e\n\x06pacote\x18\x01 \x01(\t\x12\x1b\n\x08procinfo\x18\x02 \x01(\x0b\x32\t.ProcInfo\x12\x14\n\x0cremuneracoes\x18\x03 \x01(\tB&Z$github.com/dadosjusbr/proto/pipelineb\x06proto3')
   ,
   dependencies=[coleta__pb2.DESCRIPTOR,])
 
@@ -86,6 +86,13 @@ _RESULTADOEMPACOTAMENTO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='remuneracoes', full_name='ResultadoEmpacotamento.remuneracoes', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -99,7 +106,7 @@ _RESULTADOEMPACOTAMENTO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=120,
-  serialized_end=189,
+  serialized_end=211,
 )
 
 _RESULTADOEXECUCAO.fields_by_name['pr'].message_type = _RESULTADOEMPACOTAMENTO
