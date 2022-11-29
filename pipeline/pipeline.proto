@@ -21,11 +21,11 @@ message ResultadoEmpacotamento {
 
 message RemuneracoesZip { 
 	//Caminho completo para o zip das remuneracões na máquina
-	string zipurl = 1;
+	string zip_url = 1;
 	//Quantidade de descontos que o csv das remunerações possui
-	int32 descontos = 2;
+	int32 num_descontos = 2;
 	//Quantidade de remunerações base que o csv das remunerações possui
-	int32 base = 3;
+	int32 num_base = 3;
 	//Quantidade de remunerações do tipo "outras" que o csv das remunerações possui
-	int32 outras = 4;
+	int32 num_outras = 4;
 }
