@@ -16,5 +16,12 @@ message ResultadoEmpacotamento {
 	//Estrutura que contém as informacões do processo da coleta caso tenha dado erro
 	ProcInfo procinfo = 2;
 	//Caminho completo para o zip das remuneracões na máquina
-	string remuneracoes = 3;
+	RemuneracoesZip remuneracoes = 3;
+}
+
+message RemuneracoesZip { 
+	string zipurl = 1;
+	int32 descontos = 2;
+	int32 base = 3;
+	int32 outras = 4;
 }
