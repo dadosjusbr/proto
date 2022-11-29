@@ -15,13 +15,17 @@ message ResultadoEmpacotamento {
   	string pacote = 1;
 	//Estrutura que contém as informacões do processo da coleta caso tenha dado erro
 	ProcInfo procinfo = 2;
-	//Caminho completo para o zip das remuneracões na máquina
+	//Estrutura que contém as informações sobre o arquivo das remunerações
 	RemuneracoesZip remuneracoes = 3;
 }
 
 message RemuneracoesZip { 
+	//Caminho completo para o zip das remuneracões na máquina
 	string zipurl = 1;
+	//Quantidade de descontos que o csv das remunerações possui
 	int32 descontos = 2;
+	//Quantidade de remunerações base que o csv das remunerações possui
 	int32 base = 3;
+	//Quantidade de remunerações do tipo "outras" que o csv das remunerações possui
 	int32 outras = 4;
 }
