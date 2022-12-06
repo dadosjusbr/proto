@@ -32,6 +32,8 @@ message Coleta {
     string versao_coletor = 7;
     string dir_coletor = 8;
     repeated string arquivos = 9;
+    string repositorio_parser = 10;
+    string versao_parser = 11;
 }
 
 // Estrutura que faz referência a uma lista de contra-cheques
