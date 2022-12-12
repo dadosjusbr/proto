@@ -62,7 +62,10 @@ Para consertar, você deve executar os seguintes comandos:
 
 Após isso, você conseguirá gerar o proto.
 
-## Atulizando a lib no pipy
+## Atulizando a lib no pypi
+
+Antes, faz-se necessário atualizar o número da versão em ./setup.py #L9 (visar versionamento semântico)
+É importante atualizar a versão no PyPi para que as últimas modificações estejam presentes no pacote a ser baixado com pip.
 
 ```sh
     $ python3 setup.py sdist
